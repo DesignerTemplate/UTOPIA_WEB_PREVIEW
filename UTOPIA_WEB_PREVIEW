@@ -1,1 +1,127 @@
+import * as React from 'react'
+import { View } from 'utopia-api'
+
+export var Playground = ({ style }) => {
+  return (
+    <div
+      style={{
+        fontFamily: 'Arial, sans-serif',
+        height: '100vh',
+        width: '100%',
+        backgroundColor: 'white',
+        overflowY: 'auto',
+        ...style,
+      }}
+    >
+      {/* Top Navigation Bar */}
+      <div
+        style={{
+          backgroundColor: '#cccccc',
+          padding: '20px 0',
+          textAlign: 'center',
+          position: 'sticky',
+          top: 0,
+          zIndex: 1000,
+        }}
+      >
+        <a href="#home" style={navItemStyle}>Home</a>
+        <a href="#info" style={navItemStyle}>Info</a>
+        <a href="#read" style={navItemStyle}>Read</a>
+      </div>
+
+      {/* Home Section */}
+      <div id="home" style={sectionStyle}>
+        <h1>Home</h1>
+        <p>
+          UTOPIA is more than just a concept—it’s a movement toward a decentralized, inclusive, and empowered future.
+          In a world where centralized systems dominate finance, communication, and governance, UTOPIA introduces a radical alternative:
+          a digital ecosystem where individuals, not institutions, are in control.
+        </p>
+        <p>
+          At its core, UTOPIA harnesses the power of blockchain technology and cryptocurrencies to offer freedom, privacy, and equal access.
+          It breaks down traditional barriers and allows anyone, anywhere, to participate in a truly global network.
+        </p>
+        <p>
+          One of the key things UTOPIA can do is democratize finance. Through decentralized finance (DeFi), users can lend, borrow,
+          trade, and earn interest without going through banks or middlemen.
+        </p>
+        <p>
+          But UTOPIA goes beyond finance. It creates spaces for decentralized collaboration where communities can organize, vote,
+          and manage resources transparently. Privacy is another cornerstone—UTOPIA empowers users to control their personal information.
+        </p>
+        <p>
+          Creators and innovators thrive in UTOPIA. Artists, developers, and entrepreneurs can tokenize their work, raise funds through NFTs,
+          and connect directly with global supporters. Ultimately, UTOPIA is about freedom—economic, digital, and creative.
+        </p>
+        <p>
+          The future doesn’t have to be centralized. With UTOPIA, a new world is not only possible—it’s already being built.
+        </p>
+      </div>
+
+      {/* Info Section */}
+      <div id="info" style={sectionStyle}>
+        <h1>Info</h1>
+        <p>
+          UTOPIA isn’t just a new way to handle money or data—it’s a new way to work, together. It creates a decentralized environment
+          that promotes transparency, trust, and collaboration.
+        </p>
+        <p>
+          With blockchain, teams coordinate projects, manage tasks, and handle payments without middlemen. Smart contracts automate
+          everything—define goals, distribute roles, and release payments when tasks are done.
+        </p>
+        <p>
+          UTOPIA is borderless. Team members from Tokyo to Lagos can collaborate and get paid instantly in crypto. DAOs allow voting and
+          decision-making transparently. Workers aren’t just employees—they're co-owners, earning equity and shaping the future.
+        </p>
+        <p>
+          By removing delays and bureaucracy, UTOPIA lets people focus on building. Trust becomes the default, not the exception.
+        </p>
+      </div>
+
+      {/* Read Section */}
+      <div id="read" style={sectionStyle}>
+        <h1>Read</h1>
+        <p>
+          UTOPIA is a flexible system transforming how industries operate—art, tech, education, finance, and beyond.
+        </p>
+        <p>
+          <strong>1. Creative Industries:</strong> Smart contracts ensure fair pay. NFTs allow artists to track royalties and get paid directly.
+        </p>
+        <p>
+          <strong>2. Software & Tech:</strong> Dev teams manage tasks and bugs on-chain, with instant crypto payouts and global collaboration.
+        </p>
+        <p>
+          <strong>3. Freelancers:</strong> No invoices, just smart milestones and fair pay. Build a global rep on-chain.
+        </p>
+        <p>
+          <strong>4. Education:</strong> Courses and certificates live on-chain. Teachers and students connect peer-to-peer.
+        </p>
+        <p>
+          <strong>5. Finance:</strong> UTOPIA automates payroll, budgeting, and spending using DeFi. DAOs manage funds and vote transparently.
+        </p>
+        <p>
+          <strong>6. Nonprofits:</strong> Receive donations directly and transparently. Show your impact in real time.
+        </p>
+        <p>
+          UTOPIA adapts to any workflow. Less friction. More flow. Let’s build the future—decentralized.
+        </p>
+      </div>
+    </div>
+  )
+}
+
+const navItemStyle = {
+  margin: '0 30px',
+  color: 'black',
+  fontSize: '20px',
+  fontWeight: 'bold',
+  textDecoration: 'none',
+}
+
+const sectionStyle = {
+  padding: '40px 20px',
+  textAlign: 'center',
+  maxWidth: '900px',
+  margin: 'auto',
+}
 
